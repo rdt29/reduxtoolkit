@@ -9,7 +9,7 @@ export default function Products() {
   const response = useSelector((st) => st.products);
 
   useEffect(() => {
-    dispatch(fetchProduct());
+    dispatch(fetchProduct())
   }, []);
 
   const addToCartBtn = (product) => {
