@@ -1,0 +1,28 @@
+#navmain {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 2px 5px 50px rgba(0, 0, 0, 0.5);
+}
+
+#navleft {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#navright {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.navlink {
+    text-decoration: none;
+    color: black;
+    font-family: gilroy;
+}
