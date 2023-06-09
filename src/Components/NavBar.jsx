@@ -4,6 +4,7 @@ import "./Style/NavBar.css";
 import { useSelector } from "react-redux";
 export default function NavBar() {
   const cartItems = useSelector((st) => st.Cart);
+  console.log("cartItems: ", cartItems);
   return (
     <>
       <div id="navmain">
@@ -23,10 +24,14 @@ export default function NavBar() {
             {" "}
             Products
           </NavLink>
+          <NavLink className="navlink" to="/fakeproducts">
+            {" "}
+            Fake Products
+          </NavLink>
         </div>
         <div id="navright">
           <NavLink className="navlink" to="/cart">
-            Cart <span>{cartItems.length}</span>
+            {/* Cart <span>{cartItems.length}</span> */}
           </NavLink>
         </div>
       </div>
