@@ -6,6 +6,7 @@ import LandingPage from "./Components/LandingPage";
 import Products from "./Components/Products";
 import NavBar from "./Components/NavBar";
 import Cart from "./Components/Cart";
+import FakeProducts from "./Components/FakeProducts";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/todo" element={<TodoList />} />
         <Route exact path="/products" element={<Products />} />
         <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/fakeproducts" element={<FakeProducts />} />
       </Routes>
     </div>
   );
