@@ -7,6 +7,8 @@ import Products from "./Components/Products";
 import NavBar from "./Components/NavBar";
 import Cart from "./Components/Cart";
 import FakeProducts from "./Components/FakeProducts";
+import FakeProductAdd from "./Components/FakeProductAdd";
+import Cache from "./Components/Cache";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route exact path="/products" element={<Products />} />
         <Route exact path="/cart" element={<Cart />} />
         <Route exact path="/fakeproducts" element={<FakeProducts />} />
+        <Route exact path="/fakeproductadd" element={<FakeProductAdd />} />
+        <Route exact path="/cache" element={<Cache />} />
       </Routes>
     </div>
   );

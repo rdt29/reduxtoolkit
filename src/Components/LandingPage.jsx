@@ -10,7 +10,8 @@ export default function LandingPage() {
       <br /><br />
       <NavLink to="/counter"> Counter</NavLink> <br />
       <NavLink to="/todo"> Todo List</NavLink> <br />
-      <NavLink to="/products"> Products</NavLink>
+      <NavLink to="/products"> Products</NavLink> <br />
+      <NavLink to="/cache"> Cache Example</NavLink>
     </div>
   );
 }

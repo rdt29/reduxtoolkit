@@ -11,6 +11,6 @@ export const fakeProductApi = createApi({
     }),
   }),
 });
-console.log("fakeProductApi: ", fakeProductApi);
+//console.log("fakeProductApi: ", fakeProductApi);
 
 export const { useGetAllProductsQuery } = fakeProductApi;

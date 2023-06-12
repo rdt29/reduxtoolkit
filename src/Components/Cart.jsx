@@ -12,11 +12,9 @@ export default function Cart() {
     (item, index, arr) => index === arr.findIndex((i) => i.id === item.id)
   );
 
-  useEffect(() => {
-    
-    
-    totalAmount.current = 0;
-  },[]);
+  let priceTotal = cartItems.reduce((acc, red) => (acc += red.price), 0);
+
+  useEffect(() => {}, []);
   if (cartItems.length == 0) {
     return (
       <div
@@ -54,7 +52,7 @@ export default function Cart() {
   }
 
   return (
-    <div style={{ margin: "50px 0px 0px 40px " }}>
+    <div style={{ margin: "50px 0px 40px 40px " }}>
       <table>
         <thead>
           <tr>
@@ -100,7 +98,8 @@ export default function Cart() {
           <tr>
             <td colSpan={6}>Total Amount </td>
             <td>
-              <b> {totalAmount.current} </b>
+              {/* <b> {totalAmount.current} </b> */}
+              <b> {priceTotal} </b>
             </td>
           </tr>
         </tbody>

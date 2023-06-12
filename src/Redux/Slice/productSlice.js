@@ -24,8 +24,9 @@ const productsSlice = createSlice({
       state.data = action.payload;
     });
     builder.addCase(fetchProduct.rejected, (state, action) => {
+      //console.log("action: ", action);
       state.isLoading = false;
-      state.error = action.payload;
+      state.error = action.error;
     });
   },
 });

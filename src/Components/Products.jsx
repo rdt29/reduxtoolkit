@@ -9,15 +9,18 @@ export default function Products() {
   const response = useSelector((st) => st.products);
 
   useEffect(() => {
-    dispatch(fetchProduct())
+    dispatch(fetchProduct());
   }, []);
 
   const addToCartBtn = (product) => {
     dispatch(addToCart(product));
   };
 
+  //console.log("response.error: ", response.error);
   if (response.isLoading) {
     return <h1>Loading....</h1>;
+  } else if (response.error) {
+    return <h1>{response.error.message}</h1>;
   }
   return (
     <>
